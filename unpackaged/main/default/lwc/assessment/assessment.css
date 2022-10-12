@@ -1,0 +1,7 @@
+abbr.slds-required {
+    visibility: hidden;
+}
+
+.slds-has-error .slds-form-element__help .slds-required {
+    visibility: hidden;
+}

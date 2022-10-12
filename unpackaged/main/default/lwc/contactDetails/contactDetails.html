@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="Contact Details">
+        <hr>
+        <div class="slds-grid slds-gutters slds-m-bottom_medium">
+            <div class="slds-col slds-size_1-of-3">
+                <!-- <label class="slds-p-left_medium"><span style="color:red;font-weight:bold">*</span>Name</label> -->
+                <lightning-input class="slds-p-left_medium" type="Text" variant="label-hidden" placeholder="Your Name" value={getContactRecord.LastName} onchange={lastnameChange}>
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <!-- <label><span style="color:red;font-weight:bold">*</span>Email</label> -->
+                <lightning-input type="email" variant="label-hidden" value={getContactRecord.Email} placeholder="Email Address" name="emailAddress" onchange={emailnameChange}>
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <!-- <label><span style="color:red;font-weight:bold">*</span>Phone</label> -->
+                <lightning-input class="phone slds-p-right_medium" type="phone" variant="label-hidden" value={getContactRecord.Phone} placeholder="Phone Number" onchange={phonenameChange}>
+                </lightning-input>
+            </div>
+        </div>
+        <div class="slds-grid slds-gutters slds-m-bottom_medium">
+            <div class="slds-col slds-size_1-of-3">
+                <!-- <label class="slds-p-left_medium"><span style="color:red;font-weight:bold">*</span>Company Name</label> -->
+                <lightning-input class="slds-p-left_medium" type="Text" variant="label-hidden" value={getContactRecord.Company_Name__c} placeholder="Company Name" onchange={companynameChange}>
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <!-- <label><span style="color:red;font-weight:bold">*</span>Company Url</label> -->
+                <lightning-input type="url" variant="label-hidden" value={getContactRecord.Company_Url__c} placeholder="Website Address" onchange={companyurlnameChange}>
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <!-- <label><span style="color:red;font-weight:bold">*</span>Role</label> -->
+                <lightning-input class="slds-p-right_medium" type="Text" variant="label-hidden" value={getContactRecord.Role__c} placeholder="Role" onchange={rolenameChange}>
+                </lightning-input>
+            </div>
+        </div>
+        <div class="slds-var-m-around_medium">
+            <lightning-button label="Next" onclick={handleClick} variant="brand"></lightning-button>
+            <c-verification if:true={verify} is-modal-open={verify} contact-record-id={contactid} onclosemodal={handleCloseModal} ongotosurvey={handleSurvey}></c-verification>
+        </div>
+        <div class="slds-button-group-row slds-align_absolute-center">
+            <p><strong>Disclaimer: The information provided by you will be kept confidential & used only for Assessment. We assure it will not be shared or misused.</strong></p>
+        </div>
+    <div if:true={surveyPage}>
+        <c-assessment contactid={contactid}></c-assessment>
+    </div>
+    </lightning-card>
+</template>

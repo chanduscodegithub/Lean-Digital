@@ -1,0 +1,213 @@
+<template>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_2-of-3">
+            <lightning-card title="Managed Systems">
+                <lightning-tabset>
+
+
+
+                    <lightning-tab label="Inventory">
+                        <p>Let's mark the products, of and around Salesforce, that you are spending on. This includes technical products and the people who support the technical products' availability. The products that you have integrated/interfaced with the Salesforce products could be hosted either inside the Salesforce itself or on other third-party hosts. With some technical products, you may have purchased additional capabilities to suit your specific systems management policies, such as additional servers for development, UAT, and pre-production. Lastly, you may have more than 1 production environment for a product.</p>
+                        <!-- <lightning-accordion active-section-name="B">
+                        <lightning-accordion-section name="A" label="Accordion Title A">This is the content area for section A</lightning-accordion-section>
+                        <lightning-accordion-section name="B" label="Accordion Title B">This is the content area for section B</lightning-accordion-section>
+                        <lightning-accordion-section name="C" label="Accordion Title C">This is the content area for section C</lightning-accordion-section>
+                    </lightning-accordion> -->
+                        <lightning-accordion allow-multiple-sections-open>
+                            <lightning-accordion-section name="A" label="Accordion Title A">
+                                <p>1a) Products from Salesforce, Inc.; which may be purchased with additional servers</p>
+                                <br>
+                                <table style="width:100%">
+                                    <thead>
+                                        <tr class="table-dark-bg">
+                                            <th class="col-4 text-center">Production environments</th>
+                                            <th class="col-4 text-center">Product</th>
+                                            <th class="col-4 text-center">Additional servers</th>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="1">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="div-center product">
+                                                    Sales Cloud
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="0">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="1">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="div-center product">
+                                                    Service Cloud
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="0">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="1">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="div-center product">
+                                                    Experience Cloud
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="0">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="1">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="div-center product">
+                                                    Commerce B2B Cloud
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="0">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="1">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="div-center product">
+                                                    Integration/MuleSoft
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="0">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="1">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="div-center product">
+                                                    Platform/Heroku
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="button-container div-center">
+                                                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    <input type="text" name="qty" min="0" class="qty form-control" value="0">
+                                                    <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                                <div class="industry-edition">
+                                    <h6 style="font-size: 16px;font-weight: 600">Industry Editions</h6>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="slds-size_1-of-2">
+                                                        <strong>Have you bought Industry editions (in 1 or more of your production environments)?</strong>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="slds-size_1-of-2">
+                                                        <lightning-combobox name="progress" label="Status" value={value} placeholder="Select" options={options} onchange={handleChange}>
+                                                        </lightning-combobox>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <lightning-combobox class="slds-size_2-of-12" name="progress" label="Status" variant="label-hidden" value={value} placeholder="Select" options={options} onchange={handleChange}>
+                                                </lightning-combobox>
+                                            </tr> -->
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </lightning-accordion-section>
+
+                            <lightning-accordion-section name="B" label="Accordion Title B">
+                                <p>This is the content area for section B.</p>
+                            </lightning-accordion-section>
+
+                        </lightning-accordion>
+                    </lightning-tab>
+                    <lightning-tab label="Operations and Management">
+                        Two Content !
+                    </lightning-tab>
+                </lightning-tabset>
+            </lightning-card>
+        </div>
+        <lightning-card>
+            <div class="slds-col slds-size_2-of-3">
+
+            </div>
+        </lightning-card>
+    </div>
+</template>

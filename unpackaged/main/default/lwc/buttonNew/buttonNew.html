@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+        <div class="slds-button-group-row slds-align_absolute-center">
+            <div class="slds-m-right_small">
+                <template if:true={yesClick}>
+                    <button class="slds-button slds-button_neutral custom-button slds-p-vertical_medium slds-p-horizontal_xx-large" onclick={handleClick}><strong>Take a free assessment</strong></button>
+                    <!--<lightning-button class="button" type="Yes" variant="brand" label="Take a free assessment" onclick={handleClick}></lightning-button>-->
+                </template>
+            </div>  
+        </div>
+        <!-- <div class="slds-button-group-row slds-align_absolute-center">
+            <p><strong>Disclaimer: The information provided by you will be kept confidential & used only for Assessment. We assure it will not be shared or misused.</strong></p>
+        </div> -->
+        <template if:true={img}>
+            <c-survey1></c-survey1>
+        </template>
+    </lightning-card>
+</template>

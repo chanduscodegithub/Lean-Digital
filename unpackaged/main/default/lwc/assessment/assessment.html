@@ -1,0 +1,325 @@
+<template>
+    <lightning-card title="Assessment ">
+        <lightning-tabset class="eachTabs">
+            <lightning-tab label="Business">
+                <div class="slds-var-m-around_medium">
+                    <label><span style="color:red;font-weight:bold">*</span>Q1-Do you have strategy for digital Transformation?</label>
+                    <lightning-radio-group name="Checkbox1" options={options} value={value} type="radio" onchange={handleChange}>
+                    </lightning-radio-group>
+                    <label><span style="color:red;font-weight:bold">*</span>Q2-If Yes, What stage are you in the transformation journey?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value1} placeholder="Select Option" options={options1} onchange={handleChange1} variant="label-hidden" required>
+                    </lightning-combobox>
+                    <label>Q3-What is your priorities for next 2 years?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value2} placeholder="Select Option" options={options14} onchange={handleChange2} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" data-id="3" data-type="business" class="lighInp slds-size_11-of-12" label="Q3-What is your priorities for next 2 years?" value={value2} onchange={handleChange2}></lightning-input> -->
+                    <label><span style="color:red;font-weight:bold">*</span>Q4-What are the current challenges that is impacting your business?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value3} placeholder="Select Option" options={options15} onchange={handleChange3} variant="label-hidden" required>
+                    </lightning-combobox>
+                    <!-- <label><span style="color:red;font-weight:bold">*</span>Q4-What are the current challenges that is impacting your business?</label> -->
+                    <!-- <lightning-input type="text" data-id="4" data-type="business" class="lighInp slds-size_11-of-12" value={value3} onchange={handleChange3} variant="label-hidden" required></lightning-input> -->
+                    <label>Q5-What do you see as a threat to your business in coming days?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value4} placeholder="Select Option" options={options16} onchange={handleChange4} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" data-id="5" data-type="business" class="lighInp slds-size_11-of-12" label="Q5-What do you see as a threat to your business in coming days?" value={value4} onchange={handleChange4}></lightning-input> -->
+                    <label>Q6-Do you have any advanced system to capture the current and future demand?</label>
+                    <lightning-radio-group name="Checkbox4" options={options5} value={value32} type="radio" onchange={handleChange32}>
+                    </lightning-radio-group>
+                    <label><span style="color:red;font-weight:bold">*</span>Q7-Does your Sales team have visibility to the available stock?</label>
+                    <lightning-radio-group name="Checkbox5" options={options6} value={value33} type="radio" onchange={handleChange33} variant="label-hidden" required>
+                    </lightning-radio-group>
+                    <label>Q8-Does your Production Manager know how much quantity to produce well in advance?</label>
+                    <lightning-radio-group name="Checkbox6" options={options7} value={value34} type="radio" onchange={handleChange34}>
+                    </lightning-radio-group>
+                    <label><span style="color:red;font-weight:bold">*</span>Q9-Is your Warehouse Manager having complete visibility of your inventory?</label>
+                    <lightning-radio-group name="Checkbox7" options={options8} value={value35} type="radio" onchange={handleChange35} variant="label-hidden" required>
+                    </lightning-radio-group>
+                    <label>Q10-Do you have 360-degree view of your customers?</label>
+                    <lightning-radio-group name="Checkbox8" options={options9} value={value36} type="radio" onchange={handleChange36}>
+                    </lightning-radio-group>
+                    <label>Q11-Do you have traceability of your products to raw materials?</label>
+                    <lightning-radio-group name="Checkbox9" options={options10} value={value37} type="radio" onchange={handleChange37}>
+                    </lightning-radio-group>
+                    <label><span style="color:red;font-weight:bold">*</span>Q12-Is wastage accounted in your manufacturing process?</label>
+                    <lightning-radio-group name="Checkbox10" options={options11} value={value38} type="radio" onchange={handleChange38} variant="label-hidden" required>
+                    </lightning-radio-group>
+                    <label>Q13-Has your company allocated funds for digital initiatives?</label>
+                    <lightning-radio-group name="Checkbox11" options={options12} value={value39} type="radio" onchange={handleChange39}>
+                    </lightning-radio-group>
+                    <label><span style="color:red;font-weight:bold">*</span>Q14-What areas of business your organization planning to transform?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value40} placeholder="Select Option" options={options17} onchange={handleChange40} variant="label-hidden" required>
+                    </lightning-combobox>
+                    <!-- <label><span style="color:red;font-weight:bold">*</span>Q14-What areas of business your organization planning to transform?</label>
+                    <lightning-input type="text" data-id="3" data-type="business" class="lighInp slds-size_11-of-12" value={value40} onchange={handleChange40} variant="label-hidden" required></lightning-input> -->
+                    <label><span style="color:red;font-weight:bold">*</span>Q15-Do you want us to make an initial study of your organization for digital transformation?</label>
+                    <lightning-radio-group name="Checkbox12" options={options13} value={value41} type="radio" onchange={handleChange41} variant="label-hidden" required>
+                    </lightning-radio-group>
+                    <br>
+                    <br>
+                    <b>Do you have any Questions / Challenges / Comments, please fill in the below text fields.</b>
+                    <br>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">1</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value17} onchange={handleChange17}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">2</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value18} onchange={handleChange18}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">3</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value19} onchange={handleChange19}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">4</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value20} onchange={handleChange20}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">5</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value21} onchange={handleChange21}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </lightning-tab>
+            <lightning-tab label="Process">
+                <div class="slds-var-m-around_medium">
+                    <label>Q1-How is your current sales process managed?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value5} placeholder="Select Option" options={options18} onchange={handleChange5} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" label="Q1-How is your current sales process managed?" value={value5} onchange={handleChange5}></lightning-input> -->
+                    <label><span style="color:red;font-weight:bold">*</span>Q2-Which tool you use to manage the sales process?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value6} placeholder="Select Option" options={options19} onchange={handleChange6} variant="label-hidden" required>
+                    </lightning-combobox>
+                    <!-- <label><span style="color:red;font-weight:bold">*</span>Q2-Which tool you use to manage the sales process?</label>
+                    <lightning-input type="text" value={value6} onchange={handleChange6} variant="label-hidden" required></lightning-input> -->
+                    <label>Q3-How do you onboard vendor and finalize the rate?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value7} placeholder="Select Option" options={options20} onchange={handleChange7} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" label="Q3-How do you onboard vendor and finalize the rate?" value={value7} onchange={handleChange7}></lightning-input> -->
+                    <label>Q4-Do you apply just in time concept to procure the stocks?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value8} placeholder="Select Option" options={options21} onchange={handleChange8} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" label="Q4-Do you apply just in time concept to procure the stocks?" value={value8} onchange={handleChange8}></lightning-input> -->
+                    <label><span style="color:red;font-weight:bold">*</span>Q5-Based on which parameters you plan for Procurement?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value9} placeholder="Select Option" options={options2} onchange={handleChange9} variant="label-hidden" required>
+                    </lightning-combobox>
+                    <!-- <label><span style="color:red;font-weight:bold">*</span>Q6-What areas do you like to transform?</label>
+                        <lightning-input type="text" value={value43} onchange={handleChange43} variant="label-hidden" required></lightning-input> -->
+                    <label>Q6-What are the benefits that you are looking for in this transformation?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value44} placeholder="Select Option" options={options22} onchange={handleChange44} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" label="Q7-What are the benefits that you are looking for in this transformation?" value={value44} onchange={handleChange44}></lightning-input> -->
+                    <label>Q7-How quickly do you want transformation to be completed?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value45} placeholder="Select Option" options={options23} onchange={handleChange45} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" label="Q7-How quickly do you want transformation to be completed?" value={value45} onchange={handleChange45}></lightning-input> -->
+                    <label><span style="color:red;font-weight:bold">*</span>Q8-What are the top 3 benefits you expect from this transformation?</label>
+                    <lightning-input class="slds-size_11-of-12" type="text" value={value46} onchange={handleChange46} variant="label-hidden" required></lightning-input>
+                    <lightning-input class="slds-size_11-of-12" type="text" label="Q9-Have you identified bottlenecks in your process, if so what are they?" value={value47} onchange={handleChange47}></lightning-input>
+                    <label>Q10-Does your Sales team have visibility to the existing demand, production capacity or delivery capacity?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value48} placeholder="Select Option" options={options24} onchange={handleChange48} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" label="Q10-Does your Sales team have visibility to the existing demand, production capacity or delivery capacity?" value={value48} onchange={handleChange48}></lightning-input> -->
+                    <label>Q11-How are you managing your quality and wastage?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value49} placeholder="Select Option" options={options25} onchange={handleChange49} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" label="Q11-How are you managing your quality and wastage?" value={value49} onchange={handleChange49}></lightning-input> -->
+                    <label>Q12-Is your inventory optimized?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value50} placeholder="Select Option" options={options26} onchange={handleChange50} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" label="Q12-Is your inventory optimized, if so how do you optimize your inventory?" value={value50} onchange={handleChange50}></lightning-input> -->
+                    <label>Q13-If yes, how do you optimize your inventory?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value43} placeholder="Select Option" options={options29} onchange={handleChange43} variant="label-hidden">
+                    </lightning-combobox>
+                    <label>Q14-Do you have entire 360 degree view of your customer?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value51} placeholder="Select Option" options={options27} onchange={handleChange51} variant="label-hidden">
+                    </lightning-combobox>
+                    <!-- <lightning-input type="text" label="Q13-Do you have entire 360 degree view of your customer?" value={value51} onchange={handleChange51}></lightning-input> -->
+                    <br>
+                    <br>
+                    <b>Do you have any Questions / Challenges / Comments, please fill in the below text fields.</b>
+                    <br>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">1</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value22} onchange={handleChange22}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">2</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value23} onchange={handleChange23}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">3</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value24} onchange={handleChange24}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">4</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value25} onchange={handleChange25}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">5</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value26} onchange={handleChange26}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </lightning-tab>
+            <lightning-tab label="Technology">
+                <div class="slds-var-m-around_medium">
+                    <label><span style="color:red;font-weight:bold">*</span>Q1-Which CRM Tool do you use currently?</label>
+                    <lightning-combobox class="slds-size_11-of-12" name="picklist" value={value10} placeholder="Select Option" options={options28} onchange={handleChange10} variant="label-hidden" required>
+                    </lightning-combobox>
+                    <!-- <label><span style="color:red;font-weight:bold">*</span>Q1-Which CRM Tool do you use currently?</label>
+                    <lightning-input type="text" value={value10} onchange={handleChange10} variant="label-hidden" required></lightning-input> -->
+                    <label><span style="color:red;font-weight:bold">*</span>Q2-Do you use any ERP type of solution currently?</label>
+                    <lightning-radio-group name="Checkbox2" options={options3} value={value11} type="radio" onchange={handleChange11} variant="label-hidden" required>
+                    </lightning-radio-group>
+                    <lightning-input class="slds-size_11-of-12" type="text" label="Q3-If Yes, which ERP tool do you use?" value={value12} onchange={handleChange12}></lightning-input>
+                    <lightning-input class="slds-size_11-of-12" type="text" label="Q4-Which tool do you use for procurement?" value={value13} onchange={handleChange13}></lightning-input>
+                    <lightning-input class="slds-size_11-of-12" type="text" label="Q5-Which tool do you for use order delivery?" value={value14} onchange={handleChange14}></lightning-input>
+                    <label>Q6-Do you use any analytics tool currently?</label>
+                    <lightning-radio-group name="Checkbox3" options={options4} value={value15} type="radio" onchange={handleChange15}>
+                    </lightning-radio-group>
+                    <lightning-input class="slds-size_11-of-12" type="text" label="Q7-If yes, which is the analytics tool being used?" value={value16} onchange={handleChange16}></lightning-input>
+                    <label><span style="color:red;font-weight:bold">*</span>Q8-What is your current technology stack?</label>
+                    <lightning-input class="slds-size_11-of-12" type="text" value={value42} onchange={handleChange42} variant="label-hidden" required></lightning-input>
+                    <br>
+                    <br>
+                    <b>Do you have any Questions / Challenges / Comments, please fill in the below text fields.</b>
+                    <br>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">1</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value27} onchange={handleChange27}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">2</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value28} onchange={handleChange28}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">3</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value29} onchange={handleChange29}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">4</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value30} onchange={handleChange30}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="slds-grid slds-wrap">
+                        <div>
+                            <div class="slds-p-top_xx-small slds-p-right_x-small">5</div>
+                        </div>
+                        <div class="slds-size_11-of-12">
+                            <div>
+                                <lightning-input type="text" label=" " variant="label-hidden" value={value31} onchange={handleChange31}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <lightning-input type="text" label="Question-1" value={value27} onchange={handleChange27}></lightning-input> -->
+                    <!-- <lightning-input type="text" label="Question-2" value={value28} onchange={handleChange28}></lightning-input> -->
+                    <!-- <lightning-input type="text" label="Question-3" value={value29} onchange={handleChange29}></lightning-input> -->
+                    <!-- <lightning-input type="text" label="Question-4" value={value30} onchange={handleChange30}></lightning-input> -->
+                    <!-- <lightning-input type="text" label="Question-5" value={value31} onchange={handleChange31}></lightning-input> -->
+                </div>
+                <div if:true={Button}>
+                    <lightning-button variant="Brand" label="Submit" title="Looks like a link" onclick={handleclick} class="slds-align_absolute-center"></lightning-button>
+                </div>
+                <!-- <lightning-button variant="Brand" label="Submit" title="Looks like a link" onclick={handleclick} class="slds-align_absolute-center"></lightning-button> -->
+            </lightning-tab>
+        </lightning-tabset>
+    </lightning-card>
+</template>

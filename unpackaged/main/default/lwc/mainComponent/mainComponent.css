@@ -1,0 +1,101 @@
+.button-container {
+    display: flex;
+    align-items: center;
+    margin: 4px 0px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin: 4px 0px;
+}
+
+.cart-qty-minus,
+.cart-qty-plus {
+    width: 34px;
+    height: 34px;
+    background-color: #dadada;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.button-container .form-control {
+    max-height: 40px;
+    max-width: 80px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.div-center.product {
+    margin: 10px 0;
+}
+
+.div-center {
+    display: flex;
+    justify-content: center;
+}
+
+.table-dark-bg {
+    background: #dadada;
+}
+
+td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.industry-edition{
+    background: #f1f1f1;
+        padding: 2rem;
+}
+
+/* tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+} */
+
+/* table th[class*=col-] {
+    position: static;
+    display: table-cell;
+    float: none;
+} */
+
+/* .table>tbody>tr>td {
+    padding: 0px 10px;
+    border-top: 0px solid #ddd;
+} */
+
+/* .table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th {
+    border: 1px solid #ddd;
+} */
+/* .table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+} */
+/* table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} */
+.text-center {
+    text-align: center;
+}
